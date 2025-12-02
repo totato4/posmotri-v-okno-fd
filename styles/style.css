@@ -1,6 +1,6 @@
 :root {
   --font-family: "Fira Sans Condensed", sans-serif;
-  --second-family: "Oswald", sans-serif;
+  --special-family: "Oswald", sans-serif;
 }
 
 *,
@@ -93,7 +93,7 @@ ol {
 .more-button {
   max-width: 389px;
   width: 100%;
-  margin: 0 7px 3px 3px;
+  margin: 0 0 3px 3px;
   padding: 5px 0px 5px 0px;
 }
 
@@ -130,7 +130,7 @@ ol {
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .search-form {
@@ -252,7 +252,6 @@ ol {
   position: relative;
   height: 298px;
   overflow-y: scroll;
-  overflow-x: hidden;
   margin-top: 22px;
   display: flex;
   flex-direction: column;
@@ -265,7 +264,7 @@ ol {
 }
 
 .title {
-  font-family: var(--second-family);
+  font-family: var(--special-family);
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -274,7 +273,7 @@ ol {
 }
 
 .content__accent {
-  font-family: var(--second-family);
+  font-family: var(--special-family);
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -290,7 +289,6 @@ ol {
 
 .content__details {
   max-width: 399px;
-  height: 534px;
   width: 100%;
 }
 
@@ -300,7 +298,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: var(--second-family);
+  font-family: var(--special-family);
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -312,7 +310,7 @@ ol {
   text-overflow: ellipsis;
   width: 100%;
   max-width: 193px;
-  // ограничил ширину, иначе не появляется троеточие в ЗЕЛЕНОГРАД... (как в макете)
+  /* ограничил ширину, иначе не появляется троеточие в ЗЕЛЕНОГРАД... */
 }
 
 .content__video-card-description {
